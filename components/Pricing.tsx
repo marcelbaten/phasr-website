@@ -1,37 +1,24 @@
-const freeFeatures = [
-  "Onbeperkt trainingsplannen genereren",
-  "Hardlopen, Triathlon & Hyrox",
-  "Garmin Connect sync",
-  "Apple Health integratie",
-  "Weekplanning & kalender",
-  "Basis voortgangsstatistieken",
-];
+"use client";
 
-const proFeatures = [
-  "Alles van Gratis",
-  "AI Coach: real-time plan aanpassing",
-  "Spraak-coaching tijdens workouts",
-  "Geavanceerde HRV & herstelanalyse",
-  "Onbeperkte race-doelen tegelijk",
-  "Prioriteit support",
-];
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Pricing() {
+  const { t } = useLanguage();
+
   return (
     <section id="pricing" className="py-24 bg-navy-deeper">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">
-            Pricing
+            {t.pricing.eyebrow}
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            Begin gratis,
+            {t.pricing.heading1}
             <br />
-            <span className="gradient-text">upgrade wanneer je wilt</span>
+            <span className="gradient-text">{t.pricing.heading2}</span>
           </h2>
           <p className="text-white/50 text-lg max-w-lg mx-auto">
-            De core van Phasr is gratis. AI Coach is binnenkort beschikbaar voor
-            serieuze atleten.
+            {t.pricing.subline}
           </p>
         </div>
 
@@ -39,23 +26,23 @@ export default function Pricing() {
           {/* Free */}
           <div className="glass rounded-3xl p-8 border border-white/10">
             <div className="mb-6">
-              <p className="text-white/50 text-sm font-medium mb-1">Gratis</p>
+              <p className="text-white/50 text-sm font-medium mb-1">{t.pricing.freeLabel}</p>
               <div className="flex items-baseline gap-1">
                 <span className="text-5xl font-black text-white">€0</span>
                 <span className="text-white/40 text-sm">/maand</span>
               </div>
-              <p className="text-white/40 text-xs mt-1">Voor altijd gratis</p>
+              <p className="text-white/40 text-xs mt-1">{t.pricing.freeNote}</p>
             </div>
 
             <a
               href="#download"
               className="block text-center border border-white/20 hover:border-white/40 text-white font-semibold px-6 py-3 rounded-2xl transition-colors text-sm mb-8"
             >
-              Download nu
+              {t.pricing.downloadBtn}
             </a>
 
             <ul className="space-y-3">
-              {freeFeatures.map((f) => (
+              {t.pricing.freeFeatures.map((f) => (
                 <li key={f} className="flex items-center gap-3">
                   <svg
                     className="w-4 h-4 text-white/40 flex-shrink-0"
@@ -80,20 +67,20 @@ export default function Pricing() {
           <div className="relative rounded-3xl p-8 bg-gradient-to-br from-accent/20 to-navy-light border border-accent/40 overflow-hidden">
             {/* Coming soon badge */}
             <div className="absolute top-5 right-5 bg-accent/20 border border-accent/40 text-accent text-xs font-bold px-3 py-1 rounded-full">
-              Binnenkort
+              {t.pricing.comingSoon}
             </div>
 
             {/* Glow */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="mb-6 relative">
-              <p className="text-accent text-sm font-medium mb-1">AI Coach</p>
+              <p className="text-accent text-sm font-medium mb-1">{t.pricing.aiLabel}</p>
               <div className="flex items-baseline gap-1">
                 <span className="text-5xl font-black text-white">€9</span>
                 <span className="text-white/40 text-sm">/maand</span>
               </div>
               <p className="text-white/40 text-xs mt-1">
-                Early access korting voor wachtlijst
+                {t.pricing.aiNote}
               </p>
             </div>
 
@@ -101,11 +88,11 @@ export default function Pricing() {
               href="#waitlist"
               className="relative block text-center bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 rounded-2xl transition-colors text-sm mb-8 glow"
             >
-              Join de wachtlijst
+              {t.pricing.joinWaitlist}
             </a>
 
             <ul className="space-y-3 relative">
-              {proFeatures.map((f, i) => (
+              {t.pricing.proFeatures.map((f, i) => (
                 <li key={f} className="flex items-center gap-3">
                   <svg
                     className={`w-4 h-4 flex-shrink-0 ${

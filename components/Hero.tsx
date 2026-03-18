@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="download"
@@ -30,20 +35,18 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
               <span className="text-accent text-xs font-semibold tracking-wide uppercase">
-                Nu beschikbaar in de App Store
+                {t.hero.badge}
               </span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] mb-6">
-              <span className="text-white">Train smarter.</span>
+              <span className="text-white">{t.hero.headline1}</span>
               <br />
-              <span className="gradient-text">Race faster.</span>
+              <span className="gradient-text">{t.hero.headline2}</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-white/60 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-              Slimme trainingsplannen voor hardlopers, triatleten en
-              Hyrox-atleten. Gesynchroniseerd met Garmin en Apple Health.
-              Gebouwd door atleten, voor atleten.
+              {t.hero.subline}
             </p>
 
             {/* App Store button */}
@@ -63,10 +66,10 @@ export default function Hero() {
                 </svg>
                 <div className="text-left">
                   <div className="text-xs text-navy/60 leading-none mb-0.5">
-                    Download in de
+                    {t.hero.appStoreLabel}
                   </div>
                   <div className="text-sm font-bold leading-none">
-                    App Store
+                    {t.hero.appStoreName}
                   </div>
                 </div>
               </a>
@@ -75,7 +78,7 @@ export default function Hero() {
                 href="#features"
                 className="text-white/60 hover:text-white text-sm underline underline-offset-4 transition-colors"
               >
-                Bekijk alle features →
+                {t.hero.viewFeatures}
               </a>
             </div>
 
@@ -92,8 +95,7 @@ export default function Hero() {
                 )}
               </div>
               <p className="text-white/50 text-sm">
-                <span className="text-white font-semibold">500+</span> atleten
-                al actief
+                <span className="text-white font-semibold">500+</span> {t.hero.socialProof}
               </p>
             </div>
           </div>
@@ -118,13 +120,13 @@ export default function Hero() {
               {/* Floating badge */}
               <div className="absolute -right-4 top-16 glass rounded-2xl px-4 py-3 shadow-xl">
                 <div className="text-accent text-xs font-semibold">Garmin</div>
-                <div className="text-white text-xs">Synced ✓</div>
+                <div className="text-white text-xs">{t.hero.syncedLabel}</div>
               </div>
               <div className="absolute -left-6 bottom-24 glass rounded-2xl px-4 py-3 shadow-xl">
                 <div className="text-green-400 text-xs font-semibold">
                   Apple Health
                 </div>
-                <div className="text-white text-xs">Connected ✓</div>
+                <div className="text-white text-xs">{t.hero.connectedLabel}</div>
               </div>
             </div>
           </div>

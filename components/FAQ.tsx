@@ -1,35 +1,10 @@
 "use client";
 
 import { useState } from "react";
-
-const faqs = [
-  {
-    q: "Is Phasr echt gratis?",
-    a: "Ja. De core-app (trainingsplannen genereren, Garmin sync, Apple Health, weekplanning) is volledig gratis en blijft dat ook. AI Coach is een optionele betaalde upgrade die binnenkort beschikbaar komt.",
-  },
-  {
-    q: "Hoe werkt de Garmin-synchronisatie?",
-    a: "Verbind je Garmin-account eenmalig via Garmin Connect. Phasr haalt automatisch je activiteiten, HRV, VO2max en herstelscore op om je trainingsplan te personaliseren.",
-  },
-  {
-    q: "Werkt Phasr ook zonder Garmin-horloge?",
-    a: "Absoluut. Phasr werkt ook met Apple Health. Heb je een Apple Watch of iPhone met GPS? Dan importeert Phasr je workouts direct. Een Garmin is geen vereiste.",
-  },
-  {
-    q: "Kan ik meerdere disciplines tegelijk trainen?",
-    a: "Ja, het triatlonplan combineert zwemmen, fietsen en hardlopen al in één schema. Voor Hyrox en hardlopen kun je aparte plannen kiezen en ze naast elkaar volgen.",
-  },
-  {
-    q: "Op welke iPhone werkt Phasr?",
-    a: "Phasr vereist iOS 16 of hoger. Dat omvat de iPhone 8 en nieuwer.",
-  },
-  {
-    q: "Hoe verschilt Phasr van apps zoals TrainingPeaks of Garmin Coach?",
-    a: "Phasr is gebouwd voor de recreatieve maar serieuze atleet die geen coach wil betalen. Geen complexe TSS-getallen, geen ingewikkelde interface. Gewoon een helder plan dat zich automatisch aanpast aan je leven en herstelstatus.",
-  },
-];
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function FAQ() {
+  const { t } = useLanguage();
   const [open, setOpen] = useState<number | null>(null);
 
   return (
@@ -37,15 +12,15 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
           <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">
-            FAQ
+            {t.faq.eyebrow}
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-white">
-            Veelgestelde vragen
+            {t.faq.heading}
           </h2>
         </div>
 
         <div className="space-y-3">
-          {faqs.map((faq, i) => (
+          {t.faq.items.map((faq, i) => (
             <div key={i} className="glass rounded-2xl overflow-hidden">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
@@ -84,7 +59,7 @@ export default function FAQ() {
 
         <div className="text-center mt-10">
           <p className="text-white/40 text-sm">
-            Andere vraag?{" "}
+            {t.faq.contactText}{" "}
             <a
               href="mailto:support@phasr.app"
               className="text-accent hover:underline"

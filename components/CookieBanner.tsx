@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function CookieBanner() {
+  const { t } = useLanguage();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -30,21 +32,20 @@ export default function CookieBanner() {
           🍪 Cookies & privacy
         </p>
         <p className="text-white/50 text-xs leading-relaxed mb-4">
-          We gebruiken analytische cookies (GA4) om de site te verbeteren. Geen
-          tracking zonder toestemming.
+          {t.cookieBanner.text}
         </p>
         <div className="flex gap-2">
           <button
             onClick={accept}
             className="flex-1 bg-accent hover:bg-accent-hover text-white text-xs font-semibold py-2.5 rounded-xl transition-colors"
           >
-            Accepteren
+            {t.cookieBanner.accept}
           </button>
           <button
             onClick={decline}
             className="flex-1 border border-white/15 hover:border-white/30 text-white/60 hover:text-white text-xs font-medium py-2.5 rounded-xl transition-colors"
           >
-            Weigeren
+            {t.cookieBanner.decline}
           </button>
         </div>
       </div>

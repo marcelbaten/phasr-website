@@ -1,84 +1,37 @@
 "use client";
 
 import { useState } from "react";
-
-const disciplines = [
-  {
-    id: "hardlopen",
-    label: "Hardlopen",
-    emoji: "🏃",
-    headline: "Van 5K tot marathon",
-    description:
-      "Phasr genereert een trainingsplan op basis van jouw huidige niveau, doelafstand en racedatum. Het plan past zich wekelijks aan op basis van jouw Garmin/Apple Health data: herstelstatus, HRV en trainingslast.",
-    features: [
-      "Plannen voor 5K, 10K, halve marathon en marathon",
-      "Zone-gebaseerde training (Z1–Z5)",
-      "Automatische tapering voor je race",
-      "Strava & Garmin Connect sync",
-    ],
-    keywords: "trainingsplan hardlopen app",
-  },
-  {
-    id: "triathlon",
-    label: "Triathlon",
-    emoji: "🏊",
-    headline: "Sprint tot Ironman",
-    description:
-      "Drie disciplines, één plan. Phasr balanceert zwemmen, fietsen en hardlopen op basis van jouw zwakste discipline en je raceformaat. Garmin Multi-Sport sync geeft je alle data op één plek.",
-    features: [
-      "Sprint, Olympic, 70.3 en full Ironman plannen",
-      "Garmin Multi-Sport integratie",
-      "Discipline-balans op basis van je zwaktes",
-      "Brick-workouts en race-pace sessions",
-    ],
-    keywords: "triathlon app garmin",
-  },
-  {
-    id: "hyrox",
-    label: "Hyrox",
-    emoji: "⚡",
-    headline: "Built for Hyrox",
-    description:
-      "Het eerste specifieke Hyrox-trainingsplan in een app. Phasr traint je op de acht rox-stations én de 1km hardloopintervals. Gebouwd op basis van de meest voorkomende zwaktes van Hyrox-atleten.",
-    features: [
-      "Station-specifieke krachtsessies (SkiErg, Sled, Burpees...)",
-      "Running-conditionering voor de 8×1km",
-      "Open en Pro categorieplannen",
-      "Peakweek protocol voor racedag",
-    ],
-    keywords: "hyrox trainingsplan",
-  },
-];
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function DisciplineTabs() {
-  const [active, setActive] = useState("hardlopen");
-  const current = disciplines.find((d) => d.id === active)!;
+  const { t } = useLanguage();
+  const [active, setActive] = useState<string | null>(null);
+  const current = t.disciplines.items.find((d) => d.id === (active ?? t.disciplines.items[0].id))!;
 
   return (
     <section id="disciplines" className="py-24 bg-navy">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">
-            Disciplines
+            {t.disciplines.eyebrow}
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            Jouw sport,{" "}
-            <span className="gradient-text">jouw plan</span>
+            {t.disciplines.heading1}{" "}
+            <span className="gradient-text">{t.disciplines.heading2}</span>
           </h2>
           <p className="text-white/50 max-w-lg mx-auto">
-            Phasr is gebouwd voor drie specifieke sporten, geen generieke
-            fitnessapp.
+            {t.disciplines.subline}
           </p>
         </div>
 
         {/* Tabs */}
         <div className="flex justify-center gap-2 mb-10">
-          {disciplines.map((d) => (
+          {t.disciplines.items.map((d) => (
             <button
               key={d.id}
               onClick={() => setActive(d.id)}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all ${
-                active === d.id
+                (active ?? t.disciplines.items[0].id) === d.id
                   ? "bg-accent text-white shadow-lg shadow-accent/25"
                   : "glass text-white/60 hover:text-white"
               }`}
@@ -103,7 +56,7 @@ export default function DisciplineTabs() {
                 href="#download"
                 className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 rounded-full transition-colors text-sm"
               >
-                Start met {current.label}
+                {`${t.disciplines.startWith} ${current.label}`}
                 <svg
                   className="w-4 h-4"
                   fill="none"

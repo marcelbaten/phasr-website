@@ -1,24 +1,9 @@
+"use client";
+
+import { useLanguage } from "@/lib/i18n/LanguageContext";
+
 export default function SocialProof() {
-  const testimonials = [
-    {
-      name: "Thomas V.",
-      sport: "Triatleet",
-      quote:
-        "Eindelijk een app die mijn Garmin-data écht gebruikt om mijn trainingsplan aan te passen.",
-    },
-    {
-      name: "Sara M.",
-      sport: "Hardloopster",
-      quote:
-        "In 8 weken naar mijn PR op de halve marathon. Het plan was perfect afgestemd op mijn schema.",
-    },
-    {
-      name: "Joris K.",
-      sport: "Hyrox-atleet",
-      quote:
-        "De Hyrox-plannen zijn super specifiek. Geen app doet dit zo goed als Phasr.",
-    },
-  ];
+  const { t } = useLanguage();
 
   return (
     <section className="bg-navy-darker py-16 border-y border-white/5">
@@ -26,7 +11,7 @@ export default function SocialProof() {
         {/* Partner logos */}
         <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
           <p className="text-white/30 text-xs uppercase tracking-widest w-full text-center mb-2">
-            Werkt naadloos samen met
+            {t.socialProof.partnerLabel}
           </p>
 
           {/* Garmin logo (text-based) */}
@@ -68,8 +53,8 @@ export default function SocialProof() {
 
         {/* Testimonials */}
         <div className="grid md:grid-cols-3 gap-4">
-          {testimonials.map((t) => (
-            <div key={t.name} className="glass rounded-2xl p-6">
+          {t.socialProof.testimonials.map((item) => (
+            <div key={item.name} className="glass rounded-2xl p-6">
               <div className="flex mb-3">
                 {[...Array(5)].map((_, i) => (
                   <svg
@@ -83,11 +68,11 @@ export default function SocialProof() {
                 ))}
               </div>
               <p className="text-white/70 text-sm leading-relaxed mb-4">
-                &ldquo;{t.quote}&rdquo;
+                &ldquo;{item.quote}&rdquo;
               </p>
               <div>
-                <p className="text-white font-semibold text-sm">{t.name}</p>
-                <p className="text-white/40 text-xs">{t.sport}</p>
+                <p className="text-white font-semibold text-sm">{item.name}</p>
+                <p className="text-white/40 text-xs">{item.sport}</p>
               </div>
             </div>
           ))}
