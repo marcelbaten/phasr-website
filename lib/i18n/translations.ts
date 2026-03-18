@@ -1,0 +1,465 @@
+export type Locale = "en" | "nl";
+
+export const translations = {
+  en: {
+    nav: {
+      features: "Features",
+      disciplines: "Disciplines",
+      pricing: "Pricing",
+      faq: "FAQ",
+      download: "Download free",
+    },
+    hero: {
+      badge: "Now available in the App Store",
+      headline1: "Train smarter.",
+      headline2: "Race faster.",
+      subline:
+        "Smart training plans for runners, triathletes and Hyrox athletes. Synced with Garmin and Apple Health. Built by athletes, for athletes.",
+      appStoreLabel: "Download on the",
+      appStoreName: "App Store",
+      viewFeatures: "View all features →",
+      socialProof: "athletes already active",
+      syncedLabel: "Synced ✓",
+      connectedLabel: "Connected ✓",
+    },
+    socialProof: {
+      partnerLabel: "Works seamlessly with",
+      testimonials: [
+        {
+          name: "Thomas V.",
+          sport: "Triathlete",
+          quote:
+            "Finally an app that actually uses my Garmin data to adjust my training plan.",
+        },
+        {
+          name: "Sara M.",
+          sport: "Runner",
+          quote:
+            "PR at the half marathon in 8 weeks. The plan was perfectly tailored to my schedule.",
+        },
+        {
+          name: "Joris K.",
+          sport: "Hyrox athlete",
+          quote:
+            "The Hyrox plans are super specific. No app does this as well as Phasr.",
+        },
+      ],
+    },
+    features: {
+      eyebrow: "Why Phasr?",
+      heading1: "Everything you need",
+      heading2: "in one app",
+      subline:
+        "No separate trackers, no spreadsheets. Phasr combines planning, data and coaching in one place.",
+      items: [
+        {
+          title: "Disciplines",
+          subtitle: "Running · Triathlon · Hyrox",
+          description:
+            "Specific plans per sport. From 5K beginner to Ironman and Hyrox open. Every plan is tailored to your goal and level.",
+        },
+        {
+          title: "Sync",
+          subtitle: "Garmin · Apple Health",
+          description:
+            "Your training data flows in automatically. HRV, heart rate, VO2max and sleep: Phasr reads it all and adapts your plan.",
+        },
+        {
+          title: "Planning",
+          subtitle: "Smart · Adaptive · Personal",
+          description:
+            "Enter your race date and Phasr builds backwards. Periodization, tapering and recovery weeks are automatically scheduled based on your availability.",
+        },
+      ],
+    },
+    disciplines: {
+      eyebrow: "Disciplines",
+      heading1: "Your sport,",
+      heading2: "your plan",
+      subline: "Phasr is built for three specific sports, not a generic fitness app.",
+      startWith: "Start with",
+      items: [
+        {
+          id: "running",
+          label: "Running",
+          emoji: "🏃",
+          headline: "From 5K to marathon",
+          description:
+            "Phasr generates a training plan based on your current level, target distance and race date. The plan adjusts weekly based on your Garmin/Apple Health data: recovery status, HRV and training load.",
+          features: [
+            "Plans for 5K, 10K, half marathon and marathon",
+            "Zone-based training (Z1–Z5)",
+            "Automatic tapering before your race",
+            "Strava & Garmin Connect sync",
+          ],
+        },
+        {
+          id: "triathlon",
+          label: "Triathlon",
+          emoji: "🏊",
+          headline: "Sprint to Ironman",
+          description:
+            "Three disciplines, one plan. Phasr balances swimming, cycling and running based on your weakest discipline and race format. Garmin Multi-Sport sync gives you all data in one place.",
+          features: [
+            "Sprint, Olympic, 70.3 and full Ironman plans",
+            "Garmin Multi-Sport integration",
+            "Discipline balance based on your weaknesses",
+            "Brick workouts and race-pace sessions",
+          ],
+        },
+        {
+          id: "hyrox",
+          label: "Hyrox",
+          emoji: "⚡",
+          headline: "Built for Hyrox",
+          description:
+            "The first specific Hyrox training plan in an app. Phasr trains you on all eight rox stations and the 1km running intervals. Built based on the most common weaknesses of Hyrox athletes.",
+          features: [
+            "Station-specific strength sessions (SkiErg, Sled, Burpees...)",
+            "Running conditioning for the 8×1km",
+            "Open and Pro category plans",
+            "Peak week protocol for race day",
+          ],
+        },
+      ],
+    },
+    pricing: {
+      eyebrow: "Pricing",
+      heading1: "Start free,",
+      heading2: "upgrade when you want",
+      subline:
+        "The core of Phasr is free. AI Coach is coming soon for serious athletes.",
+      freeLabel: "Free",
+      freeNote: "Free forever",
+      downloadBtn: "Download now",
+      aiLabel: "AI Coach",
+      aiNote: "Early access discount for waitlist",
+      comingSoon: "Coming soon",
+      joinWaitlist: "Join the waitlist",
+      freeFeatures: [
+        "Unlimited training plan generation",
+        "Running, Triathlon & Hyrox",
+        "Garmin Connect sync",
+        "Apple Health integration",
+        "Weekly planning & calendar",
+        "Basic progress statistics",
+      ],
+      proFeatures: [
+        "Everything in Free",
+        "AI Coach: real-time plan adjustments",
+        "Voice coaching during workouts",
+        "Advanced HRV & recovery analysis",
+        "Unlimited race goals simultaneously",
+        "Priority support",
+      ],
+    },
+    aiCoach: {
+      badge: "Coming soon",
+      heading1: "Meet",
+      heading2: "AI Coach",
+      subline:
+        "Imagine a coach that tracks your HRV, adjusts your training when you're tired, and motivates you with real-time feedback. That's AI Coach.",
+      features: [
+        { icon: "🧠", text: "Adaptive plan based on your data" },
+        { icon: "🎙️", text: "Voice coaching during your workout" },
+        { icon: "📊", text: "Advanced recovery & HRV analysis" },
+      ],
+      placeholder: "your@email.com",
+      joinBtn: "Join the waitlist",
+      loadingBtn: "Just a moment...",
+      successTitle: "You're on the list!",
+      successText:
+        "We'll send you an email as soon as AI Coach is available, including an early-access discount.",
+      gdprNote: "No spam. Unsubscribe anytime. GDPR compliant.",
+    },
+    faq: {
+      eyebrow: "FAQ",
+      heading: "Frequently asked questions",
+      contactText: "Other question?",
+      items: [
+        {
+          q: "Is Phasr really free?",
+          a: "Yes. The core app (training plan generation, Garmin sync, Apple Health, weekly planning) is completely free and will stay that way. AI Coach is an optional paid upgrade coming soon.",
+        },
+        {
+          q: "How does Garmin sync work?",
+          a: "Connect your Garmin account once via Garmin Connect. Phasr automatically pulls your activities, HRV, VO2max and recovery score to personalize your training plan.",
+        },
+        {
+          q: "Does Phasr work without a Garmin watch?",
+          a: "Absolutely. Phasr also works with Apple Health. Got an Apple Watch or iPhone with GPS? Phasr imports your workouts directly. A Garmin is not required.",
+        },
+        {
+          q: "Can I train multiple disciplines at the same time?",
+          a: "Yes, the triathlon plan already combines swimming, cycling and running in one schedule. For Hyrox and running you can choose separate plans and follow them side by side.",
+        },
+        {
+          q: "Which iPhone does Phasr support?",
+          a: "Phasr requires iOS 16 or higher. That includes the iPhone 8 and newer.",
+        },
+        {
+          q: "How does Phasr differ from apps like TrainingPeaks or Garmin Coach?",
+          a: "Phasr is built for the recreational but serious athlete who doesn't want to pay for a coach. No complex TSS numbers, no complicated interface. Just a clear plan that automatically adapts to your life and recovery status.",
+        },
+      ],
+    },
+    footer: {
+      tagline: "Built by athletes, for athletes.",
+      appStoreLabel: "Download on the",
+      appStoreName: "App Store",
+      sections: {
+        app: "App",
+        company: "Company",
+        legal: "Legal",
+      },
+      companyLinks: [
+        { href: "/about", label: "About us" },
+        { href: "/blog", label: "Blog" },
+        { href: "mailto:support@phasr.app", label: "Contact" },
+      ],
+      legalLinks: [
+        { href: "/privacy", label: "Privacy policy" },
+        { href: "/terms", label: "Terms of service" },
+        { href: "/cookies", label: "Cookie policy" },
+      ],
+      rights: "All rights reserved.",
+    },
+    cookieBanner: {
+      text: "We use cookies to improve your experience.",
+      accept: "Accept",
+      decline: "Decline",
+    },
+  },
+
+  nl: {
+    nav: {
+      features: "Features",
+      disciplines: "Disciplines",
+      pricing: "Pricing",
+      faq: "FAQ",
+      download: "Download gratis",
+    },
+    hero: {
+      badge: "Nu beschikbaar in de App Store",
+      headline1: "Train smarter.",
+      headline2: "Race faster.",
+      subline:
+        "Slimme trainingsplannen voor hardlopers, triatleten en Hyrox-atleten. Gesynchroniseerd met Garmin en Apple Health. Gebouwd door atleten, voor atleten.",
+      appStoreLabel: "Download in de",
+      appStoreName: "App Store",
+      viewFeatures: "Bekijk alle features →",
+      socialProof: "atleten al actief",
+      syncedLabel: "Gesynchroniseerd ✓",
+      connectedLabel: "Verbonden ✓",
+    },
+    socialProof: {
+      partnerLabel: "Werkt naadloos samen met",
+      testimonials: [
+        {
+          name: "Thomas V.",
+          sport: "Triatleet",
+          quote:
+            "Eindelijk een app die mijn Garmin-data écht gebruikt om mijn trainingsplan aan te passen.",
+        },
+        {
+          name: "Sara M.",
+          sport: "Hardloopster",
+          quote:
+            "In 8 weken naar mijn PR op de halve marathon. Het plan was perfect afgestemd op mijn schema.",
+        },
+        {
+          name: "Joris K.",
+          sport: "Hyrox-atleet",
+          quote:
+            "De Hyrox-plannen zijn super specifiek. Geen app doet dit zo goed als Phasr.",
+        },
+      ],
+    },
+    features: {
+      eyebrow: "Waarom Phasr?",
+      heading1: "Alles wat je nodig hebt",
+      heading2: "in één app",
+      subline:
+        "Geen losse trackers, geen spreadsheets. Phasr combineert planning, data en coaching op één plek.",
+      items: [
+        {
+          title: "Disciplines",
+          subtitle: "Hardlopen · Triathlon · Hyrox",
+          description:
+            "Specifieke plannen per sport. Van 5K-beginner tot Ironman en Hyrox open. Elk plan is afgestemd op jouw doel en niveau.",
+        },
+        {
+          title: "Sync",
+          subtitle: "Garmin · Apple Health",
+          description:
+            "Jouw trainingsdata stroomt automatisch binnen. HRV, hartslag, VO2max en slaap: Phasr leest het allemaal en past je plan aan.",
+        },
+        {
+          title: "Planning",
+          subtitle: "Slim · Adaptief · Persoonlijk",
+          description:
+            "Geef je racedag op en Phasr bouwt achteruit. Periodisering, tapering en herstelweken worden automatisch ingepland op basis van jouw beschikbaarheid.",
+        },
+      ],
+    },
+    disciplines: {
+      eyebrow: "Disciplines",
+      heading1: "Jouw sport,",
+      heading2: "jouw plan",
+      subline: "Phasr is gebouwd voor drie specifieke sporten, geen generieke fitnessapp.",
+      startWith: "Start met",
+      items: [
+        {
+          id: "hardlopen",
+          label: "Hardlopen",
+          emoji: "🏃",
+          headline: "Van 5K tot marathon",
+          description:
+            "Phasr genereert een trainingsplan op basis van jouw huidige niveau, doelafstand en racedatum. Het plan past zich wekelijks aan op basis van jouw Garmin/Apple Health data: herstelstatus, HRV en trainingslast.",
+          features: [
+            "Plannen voor 5K, 10K, halve marathon en marathon",
+            "Zone-gebaseerde training (Z1–Z5)",
+            "Automatische tapering voor je race",
+            "Strava & Garmin Connect sync",
+          ],
+        },
+        {
+          id: "triathlon",
+          label: "Triathlon",
+          emoji: "🏊",
+          headline: "Sprint tot Ironman",
+          description:
+            "Drie disciplines, één plan. Phasr balanceert zwemmen, fietsen en hardlopen op basis van jouw zwakste discipline en je raceformaat. Garmin Multi-Sport sync geeft je alle data op één plek.",
+          features: [
+            "Sprint, Olympic, 70.3 en full Ironman plannen",
+            "Garmin Multi-Sport integratie",
+            "Discipline-balans op basis van je zwaktes",
+            "Brick-workouts en race-pace sessions",
+          ],
+        },
+        {
+          id: "hyrox",
+          label: "Hyrox",
+          emoji: "⚡",
+          headline: "Built for Hyrox",
+          description:
+            "Het eerste specifieke Hyrox-trainingsplan in een app. Phasr traint je op de acht rox-stations én de 1km hardloopintervals. Gebouwd op basis van de meest voorkomende zwaktes van Hyrox-atleten.",
+          features: [
+            "Station-specifieke krachtsessies (SkiErg, Sled, Burpees...)",
+            "Running-conditionering voor de 8×1km",
+            "Open en Pro categorieplannen",
+            "Peakweek protocol voor racedag",
+          ],
+        },
+      ],
+    },
+    pricing: {
+      eyebrow: "Pricing",
+      heading1: "Begin gratis,",
+      heading2: "upgrade wanneer je wilt",
+      subline:
+        "De core van Phasr is gratis. AI Coach is binnenkort beschikbaar voor serieuze atleten.",
+      freeLabel: "Gratis",
+      freeNote: "Voor altijd gratis",
+      downloadBtn: "Download nu",
+      aiLabel: "AI Coach",
+      aiNote: "Early access korting voor wachtlijst",
+      comingSoon: "Binnenkort",
+      joinWaitlist: "Join de wachtlijst",
+      freeFeatures: [
+        "Onbeperkt trainingsplannen genereren",
+        "Hardlopen, Triathlon & Hyrox",
+        "Garmin Connect sync",
+        "Apple Health integratie",
+        "Weekplanning & kalender",
+        "Basis voortgangsstatistieken",
+      ],
+      proFeatures: [
+        "Alles van Gratis",
+        "AI Coach: real-time plan aanpassing",
+        "Spraak-coaching tijdens workouts",
+        "Geavanceerde HRV & herstelanalyse",
+        "Onbeperkte race-doelen tegelijk",
+        "Prioriteit support",
+      ],
+    },
+    aiCoach: {
+      badge: "Binnenkort beschikbaar",
+      heading1: "Maak kennis met",
+      heading2: "AI Coach",
+      subline:
+        "Stel je voor: een coach die jouw HRV bijhoudt, je training aanpast als je moe bent, en je motiveert met real-time feedback. Dat is AI Coach.",
+      features: [
+        { icon: "🧠", text: "Adaptief plan op basis van jouw data" },
+        { icon: "🎙️", text: "Spraakcoaching tijdens je workout" },
+        { icon: "📊", text: "Geavanceerde herstel- & HRV-analyse" },
+      ],
+      placeholder: "jouw@email.com",
+      joinBtn: "Join de wachtlijst",
+      loadingBtn: "Even wachten...",
+      successTitle: "Je staat op de lijst!",
+      successText:
+        "We sturen je een e-mail zodra AI Coach beschikbaar is, inclusief een early-access korting.",
+      gdprNote: "Geen spam. Uitschrijven kan altijd. GDPR-compliant.",
+    },
+    faq: {
+      eyebrow: "FAQ",
+      heading: "Veelgestelde vragen",
+      contactText: "Andere vraag?",
+      items: [
+        {
+          q: "Is Phasr echt gratis?",
+          a: "Ja. De core-app (trainingsplannen genereren, Garmin sync, Apple Health, weekplanning) is volledig gratis en blijft dat ook. AI Coach is een optionele betaalde upgrade die binnenkort beschikbaar komt.",
+        },
+        {
+          q: "Hoe werkt de Garmin-synchronisatie?",
+          a: "Verbind je Garmin-account eenmalig via Garmin Connect. Phasr haalt automatisch je activiteiten, HRV, VO2max en herstelscore op om je trainingsplan te personaliseren.",
+        },
+        {
+          q: "Werkt Phasr ook zonder Garmin-horloge?",
+          a: "Absoluut. Phasr werkt ook met Apple Health. Heb je een Apple Watch of iPhone met GPS? Dan importeert Phasr je workouts direct. Een Garmin is geen vereiste.",
+        },
+        {
+          q: "Kan ik meerdere disciplines tegelijk trainen?",
+          a: "Ja, het triatlonplan combineert zwemmen, fietsen en hardlopen al in één schema. Voor Hyrox en hardlopen kun je aparte plannen kiezen en ze naast elkaar volgen.",
+        },
+        {
+          q: "Op welke iPhone werkt Phasr?",
+          a: "Phasr vereist iOS 16 of hoger. Dat omvat de iPhone 8 en nieuwer.",
+        },
+        {
+          q: "Hoe verschilt Phasr van apps zoals TrainingPeaks of Garmin Coach?",
+          a: "Phasr is gebouwd voor de recreatieve maar serieuze atleet die geen coach wil betalen. Geen complexe TSS-getallen, geen ingewikkelde interface. Gewoon een helder plan dat zich automatisch aanpast aan je leven en herstelstatus.",
+        },
+      ],
+    },
+    footer: {
+      tagline: "Gebouwd door atleten, voor atleten.",
+      appStoreLabel: "Download in de",
+      appStoreName: "App Store",
+      sections: {
+        app: "App",
+        company: "Bedrijf",
+        legal: "Juridisch",
+      },
+      companyLinks: [
+        { href: "/over", label: "Over ons" },
+        { href: "/blog", label: "Blog" },
+        { href: "mailto:support@phasr.app", label: "Contact" },
+      ],
+      legalLinks: [
+        { href: "/privacy", label: "Privacybeleid" },
+        { href: "/terms", label: "Algemene voorwaarden" },
+        { href: "/cookies", label: "Cookiebeleid" },
+      ],
+      rights: "Alle rechten voorbehouden.",
+    },
+    cookieBanner: {
+      text: "We gebruiken cookies om je ervaring te verbeteren.",
+      accept: "Accepteren",
+      decline: "Weigeren",
+    },
+  },
+} as const;
+
+export type Translations = typeof translations.en;
