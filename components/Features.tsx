@@ -8,7 +8,7 @@ const features = [
     title: "Disciplines",
     subtitle: "Hardlopen · Triathlon · Hyrox",
     description:
-      "Specifieke plannen per sport. Van 5K-beginner tot Ironman en Hyrox open — elk plan is afgestemd op jouw doel en niveau.",
+      "Specifieke plannen per sport. Van 5K-beginner tot Ironman en Hyrox open. Elk plan is afgestemd op jouw doel en niveau.",
     color: "from-blue-500/20 to-blue-600/5",
     accent: "text-blue-400",
   },
@@ -21,7 +21,7 @@ const features = [
     title: "Sync",
     subtitle: "Garmin · Apple Health",
     description:
-      "Jouw trainingsdata stroomt automatisch binnen. HRV, hartslag, VO2max, slaap — Phasr leest het allemaal en past je plan aan.",
+      "Jouw trainingsdata stroomt automatisch binnen. HRV, hartslag, VO2max en slaap: Phasr leest het allemaal en past je plan aan.",
     color: "from-green-500/20 to-green-600/5",
     accent: "text-green-400",
   },
@@ -34,7 +34,7 @@ const features = [
     title: "Planning",
     subtitle: "Slim · Adaptief · Persoonlijk",
     description:
-      "Geef je racedag op en Phasr bouwt achteruit. Periodisering, tapering, herstelweken — automatisch ingepland op basis van jouw beschikbaarheid.",
+      "Geef je racedag op en Phasr bouwt achteruit. Periodisering, tapering en herstelweken worden automatisch ingepland op basis van jouw beschikbaarheid.",
     color: "from-purple-500/20 to-purple-600/5",
     accent: "text-purple-400",
   },

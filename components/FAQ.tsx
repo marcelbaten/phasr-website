@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Is Phasr echt gratis?",
-    a: "Ja. De core-app — trainingsplannen genereren, Garmin sync, Apple Health, weekplanning — is volledig gratis en blijft dat ook. AI Coach is een optionele betaalde upgrade die binnenkort beschikbaar komt.",
+    a: "Ja. De core-app (trainingsplannen genereren, Garmin sync, Apple Health, weekplanning) is volledig gratis en blijft dat ook. AI Coach is een optionele betaalde upgrade die binnenkort beschikbaar komt.",
   },
   {
     q: "Hoe werkt de Garmin-synchronisatie?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Kan ik meerdere disciplines tegelijk trainen?",
-    a: "Ja — het triatlonplan combineert zwemmen, fietsen en hardlopen al in één schema. Voor Hyrox en hardlopen kun je aparte plannen kiezen en ze naast elkaar volgen.",
+    a: "Ja, het triatlonplan combineert zwemmen, fietsen en hardlopen al in één schema. Voor Hyrox en hardlopen kun je aparte plannen kiezen en ze naast elkaar volgen.",
   },
   {
     q: "Op welke iPhone werkt Phasr?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Hoe verschilt Phasr van apps zoals TrainingPeaks of Garmin Coach?",
-    a: "Phasr is gebouwd voor de recreatieve maar serieuze atleet die geen coach wil betalen. Geen complexe TSS-getallen, geen ingewikkelde interface — gewoon een helder plan dat zich automatisch aanpast aan je leven en herstelstatus.",
+    a: "Phasr is gebouwd voor de recreatieve maar serieuze atleet die geen coach wil betalen. Geen complexe TSS-getallen, geen ingewikkelde interface. Gewoon een helder plan dat zich automatisch aanpast aan je leven en herstelstatus.",
   },
 ];
 

@@ -66,7 +66,7 @@ export default function DisciplineTabs() {
             <span className="gradient-text">jouw plan</span>
           </h2>
           <p className="text-white/50 max-w-lg mx-auto">
-            Phasr is gebouwd voor drie specifieke sporten — geen generieke
+            Phasr is gebouwd voor drie specifieke sporten, geen generieke
             fitnessapp.
           </p>
         </div>

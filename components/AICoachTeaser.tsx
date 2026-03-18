@@ -83,8 +83,8 @@ export default function AICoachTeaser() {
               Je staat op de lijst!
             </p>
             <p className="text-white/50 text-sm">
-              We sturen je een e-mail zodra AI Coach beschikbaar is — met een
-              early-access korting.
+              We sturen je een e-mail zodra AI Coach beschikbaar is, inclusief
+              een early-access korting.
             </p>
           </div>
         ) : (
