@@ -13,10 +13,18 @@ export default function AICoachTeaser() {
     e.preventDefault();
     if (!email) return;
     setLoading(true);
-    // Vervang dit door je eigen e-mail API (bijv. Loops, Mailchimp, Resend)
-    await new Promise((r) => setTimeout(r, 800)); // simuleer API call
-    setSubmitted(true);
-    setLoading(false);
+    try {
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

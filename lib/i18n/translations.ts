@@ -85,12 +85,12 @@ export const translations = {
           emoji: "🏃",
           headline: "From 5K to marathon",
           description:
-            "Phasr generates a training plan based on your current level, target distance and race date. The plan adjusts weekly based on your Garmin/Apple Health data: recovery status, HRV and training load.",
+            "Phasr generates a training plan based on your current level, target distance and race date. Your workouts sync automatically via Garmin Connect and Apple Health.",
           features: [
             "Plans for 5K, 10K, half marathon and marathon",
             "Zone-based training (Z1–Z5)",
             "Automatic tapering before your race",
-            "Strava & Garmin Connect sync",
+            "Garmin Connect sync",
           ],
         },
         {
@@ -99,10 +99,10 @@ export const translations = {
           emoji: "🏊",
           headline: "Sprint to Ironman",
           description:
-            "Three disciplines, one plan. Phasr balances swimming, cycling and running based on your weakest discipline and race format. Garmin Multi-Sport sync gives you all data in one place.",
+            "Three disciplines, one plan. Phasr balances swimming, cycling and running based on your weakest discipline and race format. Completed workouts sync via Garmin Connect and Apple Health.",
           features: [
             "Sprint, Olympic, 70.3 and full Ironman plans",
-            "Garmin Multi-Sport integration",
+            "Garmin Connect sync",
             "Discipline balance based on your weaknesses",
             "Brick workouts and race-pace sessions",
           ],
@@ -183,15 +183,15 @@ export const translations = {
         },
         {
           q: "How does Garmin sync work?",
-          a: "Connect your Garmin account once via Garmin Connect. Phasr automatically pulls your activities, HRV, VO2max and recovery score to personalize your training plan.",
+          a: "Connect your Garmin account once via Garmin Connect. Phasr sends your scheduled workouts directly to your Garmin device. Health metrics like HRV, VO2max and resting heart rate are read from Apple Health.",
         },
         {
           q: "Does Phasr work without a Garmin watch?",
-          a: "Absolutely. Phasr also works with Apple Health. Got an Apple Watch or iPhone with GPS? Phasr imports your workouts directly. A Garmin is not required.",
+          a: "Yes. Phasr works with Apple Health. Workouts recorded with an Apple Watch or iPhone automatically appear in Phasr. A Garmin is not required.",
         },
         {
-          q: "Can I train multiple disciplines at the same time?",
-          a: "Yes, the triathlon plan already combines swimming, cycling and running in one schedule. For Hyrox and running you can choose separate plans and follow them side by side.",
+          q: "Can I follow multiple training plans at the same time?",
+          a: "Currently Phasr supports one active training plan at a time. The triathlon plan already combines swimming, cycling and running in one schedule.",
         },
         {
           q: "Which iPhone does Phasr support?",
@@ -315,12 +315,12 @@ export const translations = {
           emoji: "🏃",
           headline: "Van 5K tot marathon",
           description:
-            "Phasr genereert een trainingsplan op basis van jouw huidige niveau, doelafstand en racedatum. Het plan past zich wekelijks aan op basis van jouw Garmin/Apple Health data: herstelstatus, HRV en trainingslast.",
+            "Phasr genereert een trainingsplan op basis van jouw huidige niveau, doelafstand en racedatum. Je workouts synchroniseren automatisch via Garmin Connect en Apple Health.",
           features: [
             "Plannen voor 5K, 10K, halve marathon en marathon",
             "Zone-gebaseerde training (Z1–Z5)",
             "Automatische tapering voor je race",
-            "Strava & Garmin Connect sync",
+            "Garmin Connect sync",
           ],
         },
         {
@@ -329,10 +329,10 @@ export const translations = {
           emoji: "🏊",
           headline: "Sprint tot Ironman",
           description:
-            "Drie disciplines, één plan. Phasr balanceert zwemmen, fietsen en hardlopen op basis van jouw zwakste discipline en je raceformaat. Garmin Multi-Sport sync geeft je alle data op één plek.",
+            "Drie disciplines, één plan. Phasr balanceert zwemmen, fietsen en hardlopen op basis van jouw zwakste discipline en je raceformaat. Voltooide workouts synchroniseren via Garmin Connect en Apple Health.",
           features: [
             "Sprint, Olympic, 70.3 en full Ironman plannen",
-            "Garmin Multi-Sport integratie",
+            "Garmin Connect sync",
             "Discipline-balans op basis van je zwaktes",
             "Brick-workouts en race-pace sessions",
           ],
@@ -413,15 +413,15 @@ export const translations = {
         },
         {
           q: "Hoe werkt de Garmin-synchronisatie?",
-          a: "Verbind je Garmin-account eenmalig via Garmin Connect. Phasr haalt automatisch je activiteiten, HRV, VO2max en herstelscore op om je trainingsplan te personaliseren.",
+          a: "Verbind je Garmin-account eenmalig via Garmin Connect. Phasr stuurt geplande workouts rechtstreeks naar je Garmin-apparaat. Gezondheidsmetingen zoals HRV, VO2max en rusthartslag worden gelezen vanuit Apple Health.",
         },
         {
           q: "Werkt Phasr ook zonder Garmin-horloge?",
-          a: "Absoluut. Phasr werkt ook met Apple Health. Heb je een Apple Watch of iPhone met GPS? Dan importeert Phasr je workouts direct. Een Garmin is geen vereiste.",
+          a: "Ja. Phasr werkt met Apple Health. Workouts opgenomen met een Apple Watch of iPhone verschijnen automatisch in Phasr. Een Garmin is geen vereiste.",
         },
         {
-          q: "Kan ik meerdere disciplines tegelijk trainen?",
-          a: "Ja, het triatlonplan combineert zwemmen, fietsen en hardlopen al in één schema. Voor Hyrox en hardlopen kun je aparte plannen kiezen en ze naast elkaar volgen.",
+          q: "Kan ik meerdere trainingsplannen tegelijk volgen?",
+          a: "Momenteel ondersteunt Phasr één actief trainingsplan tegelijk. Het triatlonplan combineert zwemmen, fietsen en hardlopen al in één schema.",
         },
         {
           q: "Op welke iPhone werkt Phasr?",
