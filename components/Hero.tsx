@@ -98,66 +98,33 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: app mockup placeholder */}
+          {/* Right: real app screenshot */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Phone frame */}
-              <div className="w-[280px] h-[580px] bg-navy-light rounded-[44px] border-2 border-white/10 shadow-2xl flex items-center justify-center relative overflow-hidden">
-                {/* Screen content placeholder */}
-                <div className="absolute inset-2 bg-navy-deeper rounded-[38px] flex flex-col items-center justify-center gap-4 p-6">
-                  <div className="rounded-2xl overflow-hidden bg-[#192240]">
-                    <Image
-                      src="/logo.png"
-                      alt="Phasr"
-                      width={80}
-                      height={80}
-                    />
-                  </div>
-                  <div className="text-white/30 text-xs text-center">
-                    App screenshots
-                    <br />
-                    hier invoegen
-                  </div>
-
-                  {/* Fake metrics */}
-                  <div className="w-full mt-4 space-y-2">
-                    {[
-                      { label: "Weekvolume", value: "62 km", color: "bg-accent" },
-                      { label: "Zone 2", value: "74%", color: "bg-green-500" },
-                      { label: "Herstel", value: "85%", color: "bg-orange-400" },
-                    ].map((m) => (
-                      <div key={m.label} className="glass rounded-xl p-3">
-                        <div className="flex justify-between items-center mb-1.5">
-                          <span className="text-white/50 text-xs">{m.label}</span>
-                          <span className="text-white text-xs font-bold">
-                            {m.value}
-                          </span>
-                        </div>
-                        <div className="h-1 bg-white/10 rounded-full overflow-hidden">
-                          <div
-                            className={`h-full ${m.color} rounded-full`}
-                            style={{ width: m.value.includes("%") ? m.value : "70%" }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Notch */}
-                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-24 h-5 bg-navy-deeper rounded-full" />
+              <div className="w-[280px] h-[580px] bg-[#1a1a1a] rounded-[44px] border-2 border-white/10 shadow-2xl relative overflow-hidden">
+                <Image
+                  src="/app-screenshot.png"
+                  alt="Phasr dashboard"
+                  fill
+                  className="object-cover object-top rounded-[42px]"
+                  sizes="280px"
+                  priority
+                />
+                {/* Dynamic Island overlay */}
+                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-24 h-7 bg-black rounded-full z-10" />
               </div>
 
               {/* Floating badge */}
               <div className="absolute -right-4 top-16 glass rounded-2xl px-4 py-3 shadow-xl">
                 <div className="text-accent text-xs font-semibold">Garmin</div>
-                <div className="text-white text-xs">Gesynchroniseerd ✓</div>
+                <div className="text-white text-xs">Synced ✓</div>
               </div>
               <div className="absolute -left-6 bottom-24 glass rounded-2xl px-4 py-3 shadow-xl">
                 <div className="text-green-400 text-xs font-semibold">
                   Apple Health
                 </div>
-                <div className="text-white text-xs">Verbonden ✓</div>
+                <div className="text-white text-xs">Connected ✓</div>
               </div>
             </div>
           </div>
