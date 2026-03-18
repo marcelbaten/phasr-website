@@ -105,13 +105,14 @@ export default function Hero() {
               <div className="w-[280px] h-[580px] bg-navy-light rounded-[44px] border-2 border-white/10 shadow-2xl flex items-center justify-center relative overflow-hidden">
                 {/* Screen content placeholder */}
                 <div className="absolute inset-2 bg-navy-deeper rounded-[38px] flex flex-col items-center justify-center gap-4 p-6">
-                  <Image
-                    src="/logo.png"
-                    alt="Phasr"
-                    width={80}
-                    height={80}
-                    className="rounded-2xl opacity-80"
-                  />
+                  <div className="rounded-2xl overflow-hidden bg-[#192240]">
+                    <Image
+                      src="/logo.png"
+                      alt="Phasr"
+                      width={80}
+                      height={80}
+                    />
+                  </div>
                   <div className="text-white/30 text-xs text-center">
                     App screenshots
                     <br />

@@ -10,13 +10,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Image
-                src="/logo.png"
-                alt="Phasr"
-                width={32}
-                height={32}
-                className="rounded-xl"
-              />
+              <div className="rounded-xl overflow-hidden bg-[#192240]">
+                <Image
+                  src="/logo.png"
+                  alt="Phasr"
+                  width={32}
+                  height={32}
+                />
+              </div>
               <span className="font-bold text-lg text-white">Phasr</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-4">
