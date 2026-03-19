@@ -51,7 +51,7 @@ export default function AboutPage() {
         <div className="mb-14">
           <p className="text-white/90 text-lg sm:text-xl leading-relaxed">
             We are endurance athletes. For years we have been putting in the
-            kilometres — on the road, on the bike, in the water. We have crossed
+            kilometres: on the road, on the bike, in the water. We have crossed
             70.3 finish lines, set personal records, and shown up to races we
             simply were not ready for.
           </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Block 4 — the punchy closer */}
+        {/* Block 4 */}
         <div className="mb-20">
           <p className="text-white text-xl sm:text-2xl font-semibold leading-relaxed">
             That app did not exist. So we built it.
@@ -115,7 +115,7 @@ export default function AboutPage() {
         {/* Closing line */}
         <p className="text-white/60 text-base leading-relaxed mb-16">
           Whether you are finishing your first 5K or preparing for a half
-          triathlon — we understand what you are working towards, because we are
+          triathlon: we understand what you are working towards, because we are
           working towards it too.
         </p>
 
