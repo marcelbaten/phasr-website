@@ -51,7 +51,7 @@ export default function OverPage() {
         <div className="mb-14">
           <p className="text-white/90 text-lg sm:text-xl leading-relaxed">
             Wij zijn duursporters. Al jaren leggen we kilometers af op de weg,
-            op de fiets, in het water. We hebben 70.3-finishes gehaald, personal
+            op de fiets, in het water. We hebben 70.3 finishes gehaald, personal
             records gebroken en wedstrijden gehad waarvoor we simpelweg niet
             klaar waren.
           </p>
@@ -94,7 +94,7 @@ export default function OverPage() {
             {
               icon: "🎯",
               title: "Specifiek, niet generiek",
-              text: "Phasr is gebouwd voor hardlopers, triatleten en Hyrox-atleten. Niet voor iedereen, niet voor alles.",
+              text: "Phasr is gebouwd voor hardlopers, triatleten en Hyrox atleten. Niet voor iedereen, niet voor alles.",
             },
             {
               icon: "💶",
