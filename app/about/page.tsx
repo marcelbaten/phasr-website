@@ -133,7 +133,7 @@ export default function AboutPage() {
             Download Phasr free
           </a>
           <a
-            href="mailto:support@phasr.app"
+            href="mailto:support@gophasr.com"
             className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white/70 hover:text-white font-semibold px-6 py-3 rounded-full transition-colors"
           >
             Get in touch

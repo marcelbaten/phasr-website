@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
 
-  // Stuur email naar support@phasr.app via Resend (gratis tot 3000/maand)
+  // Stuur email naar support@gophasr.com via Resend (gratis tot 3000/maand)
   // Voeg RESEND_API_KEY toe als environment variable in Vercel
   const apiKey = process.env.RESEND_API_KEY;
 
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
     },
     body: JSON.stringify({
       from: "Phasr Waitlist <noreply@gophasr.com>",
-      to: ["support@phasr.app"],
+      to: ["support@gophasr.com"],
       subject: "Nieuwe AI Coach aanmelding",
       html: `<p>Nieuw e-mailadres op de wachtlijst: <strong>${email}</strong></p>`,
     }),

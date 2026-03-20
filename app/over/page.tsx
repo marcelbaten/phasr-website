@@ -134,7 +134,7 @@ export default function OverPage() {
             Download Phasr gratis
           </a>
           <a
-            href="mailto:support@phasr.app"
+            href="mailto:support@gophasr.com"
             className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white/70 hover:text-white font-semibold px-6 py-3 rounded-full transition-colors"
           >
             Neem contact op

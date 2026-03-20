@@ -61,10 +61,10 @@ export default function FAQ() {
           <p className="text-white/40 text-sm">
             {t.faq.contactText}{" "}
             <a
-              href="mailto:support@phasr.app"
+              href="mailto:support@gophasr.com"
               className="text-accent hover:underline"
             >
-              support@phasr.app
+              support@gophasr.com
             </a>
           </p>
         </div>

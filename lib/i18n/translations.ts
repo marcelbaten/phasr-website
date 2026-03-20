@@ -215,7 +215,7 @@ export const translations = {
       companyLinks: [
         { href: "/about", label: "About us" },
         { href: "/blog", label: "Blog" },
-        { href: "mailto:support@phasr.app", label: "Contact" },
+        { href: "mailto:support@gophasr.com", label: "Contact" },
       ],
       legalLinks: [
         { href: "/privacy", label: "Privacy policy" },
@@ -445,7 +445,7 @@ export const translations = {
       companyLinks: [
         { href: "/over", label: "Over ons" },
         { href: "/blog", label: "Blog" },
-        { href: "mailto:support@phasr.app", label: "Contact" },
+        { href: "mailto:support@gophasr.com", label: "Contact" },
       ],
       legalLinks: [
         { href: "/privacy", label: "Privacybeleid" },
