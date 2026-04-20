@@ -52,7 +52,7 @@ export default function Hero() {
             {/* App Store button */}
             <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4">
               <a
-                href="https://apps.apple.com/app/phasr"
+                href="https://apps.apple.com/us/app/phasr-endurance-coach/id6761650788"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 bg-white text-navy font-semibold px-6 py-3.5 rounded-2xl hover:bg-white/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"

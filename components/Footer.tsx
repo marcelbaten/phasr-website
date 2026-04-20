@@ -31,7 +31,7 @@ export default function Footer() {
             </p>
             {/* App Store badge */}
             <a
-              href="https://apps.apple.com/app/phasr"
+              href="https://apps.apple.com/us/app/phasr-endurance-coach/id6761650788"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white/8 hover:bg-white/12 border border-white/10 rounded-xl px-3 py-2 transition-colors"
