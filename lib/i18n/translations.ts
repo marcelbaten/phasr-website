@@ -62,7 +62,7 @@ export const translations = {
           title: "Sync",
           subtitle: "Garmin · Apple Health",
           description:
-            "Your training data flows in automatically. HRV, heart rate, VO2max and sleep: Phasr reads it all and adapts your plan.",
+            "Workouts sync automatically in the background. HRV, resting heart rate, VO2max and training load are tracked with 14-day charts and zone indicators, so you always know how your body is responding.",
         },
         {
           title: "Planning",
@@ -142,7 +142,7 @@ export const translations = {
         "Garmin Connect sync",
         "Apple Health integration",
         "Weekly planning & calendar",
-        "Basic progress statistics",
+        "Health dashboard (HRV, VO2max, training load)",
       ],
       proFeatures: [
         "Everything in Free",
@@ -199,7 +199,7 @@ export const translations = {
         },
         {
           q: "How does Phasr differ from apps like TrainingPeaks or Garmin Coach?",
-          a: "Phasr is built for the recreational but serious athlete who doesn't want to pay for a coach. No complex TSS numbers, no complicated interface. Just a clear plan that automatically adapts to your life and recovery status.",
+          a: "Phasr is built for the recreational but serious athlete who doesn't want to pay for a coach. Where TrainingPeaks leaves you to figure out TSS and ATL yourself, Phasr explains every metric in plain language, from training load (TSB, ATL, CTL) to health trends like HRV and VO2max. A clear plan that adapts to your schedule and recovery.",
         },
       ],
     },
@@ -292,7 +292,7 @@ export const translations = {
           title: "Sync",
           subtitle: "Garmin · Apple Health",
           description:
-            "Jouw trainingsdata stroomt automatisch binnen. HRV, hartslag, VO2max en slaap: Phasr leest het allemaal en past je plan aan.",
+            "Workouts worden automatisch op de achtergrond gesynchroniseerd. HRV, rusthartslag, VO2max en trainingsbelasting worden bijgehouden met 14-daagse grafieken en zone-indicatoren, zodat je altijd weet hoe je lichaam reageert.",
         },
         {
           title: "Planning",
@@ -372,7 +372,7 @@ export const translations = {
         "Garmin Connect sync",
         "Apple Health integratie",
         "Weekplanning & kalender",
-        "Basis voortgangsstatistieken",
+        "Gezondheids- en trainingsbelasting dashboard (HRV, VO2max, TSB)",
       ],
       proFeatures: [
         "Alles van Gratis",
@@ -429,7 +429,7 @@ export const translations = {
         },
         {
           q: "Hoe verschilt Phasr van apps zoals TrainingPeaks of Garmin Coach?",
-          a: "Phasr is gebouwd voor de recreatieve maar serieuze atleet die geen coach wil betalen. Geen complexe TSS-getallen, geen ingewikkelde interface. Gewoon een helder plan dat zich automatisch aanpast aan je leven en herstelstatus.",
+          a: "Phasr is gebouwd voor de recreatieve maar serieuze atleet die geen coach wil betalen. Waar TrainingPeaks je laat uitzoeken wat TSS en ATL betekenen, legt Phasr elke meting in duidelijke taal uit, van trainingsbelasting (TSB, ATL, CTL) tot gezondheidsmetingen als HRV en VO2max. Een helder plan dat zich aanpast aan jouw schema en herstel.",
         },
       ],
     },
