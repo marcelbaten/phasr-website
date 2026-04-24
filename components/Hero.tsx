@@ -82,22 +82,6 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Social proof mini */}
-            <div className="mt-8 flex items-center gap-3 justify-center lg:justify-start">
-              <div className="flex -space-x-2">
-                {["bg-blue-400", "bg-green-400", "bg-purple-400", "bg-orange-400"].map(
-                  (color, i) => (
-                    <div
-                      key={i}
-                      className={`w-8 h-8 rounded-full border-2 border-navy-deeper ${color}`}
-                    />
-                  )
-                )}
-              </div>
-              <p className="text-white/50 text-sm">
-                <span className="text-white font-semibold">500+</span> {t.hero.socialProof}
-              </p>
-            </div>
           </div>
 
           {/* Right: real app screenshot */}
